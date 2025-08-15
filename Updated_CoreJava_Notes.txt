@@ -1,0 +1,1361 @@
+Java is a one of the programming language and this language was
+developed by james gosling in the year 1995 and released in the market in the year 1996 (java 1st version).
+
+Java is available in 24 versions.
+Introduction To Java:
+====================
+c,c++,java,python,c#.net,php and so on.
+
+java is a one of the programming language,we can call this language as a universal programming language.
+
+This Language was developed by sunmicrosystem peoples means
+James Gosling and there team in the year 1995.
+
+Copy rights of java was maintaining at present by Oracle Corporation Members.
+
+Java is available in 24 versions.
+
+A.java(SOURCE CODE)===>AFTER COMPILATION OF (A.java)===>A.class(BYTE CODE)
+
+Features For Java:
+==================
+1)it is a platform independent programming language.
+2)it is a object oriented pl.
+3)it is a multithreading pl.
+
+we can develop the java programs in different types of platforms:
+================================================================
+1)Text Editors===>Notepad,Notepad++,Editplus and so on.
+========================================================
+Developing the code using Texeditors takes lot of time and also complete 100 percent code
+we should have to define and also coding tools are not supported for developing 
+the applications.
+
+To Over Come this problem we can use the concept of IDE'S.
+
+
+2)IDE'S(Integrated Development Environment)==>Eclipse,Net Beans and so on:
+==========================================================================
+Developing the code using IDE'S takes less time when compared to texeditors and also some of the code we should get by default.
+Tools supporting is Possible for developing the Applications Using IDE'S.
+
+IN ECLIPSE WE HAVE TWO TYPES OF PERSPECTIVES :
+
+  A)JSE OR J2SE PERSPECTIVE(JAVA STANDARD EDITION/JAVA2STANDARDEDITION==>COREJAVA+JDBC)
+
+  B)JEE OR J2EE PERSPECTIVE(JAVA ENTERPRISE EDITION/JAVA2ENTERPRISE EDITION==>SERVLETS++JSP(JAVA SERVER PAGE),FRAMEWORKS).
+
+
+Program:
+========
+Set of instructions is also known as a Program.
+
+Every Java Program must be starts with class keyword.
+
+
+Structure Of Java Program:
+===========================
+package creationstatement;
+import creationstatement;
+
+class classname{
+   logic 
+   main() method{ //Every Java Program execution starts from main() method onwards.
+   }
+}
+
+definition of class:
+=====================
+class is a syntax or structure used to group related datamembers along with related functionalities is 
+known as a class.
+
+datamembers ==> datatypes + variables
+
+functionalities====>methods
+
+Every Java program must be saved with an extensions of classname.java.
+
+Example Java Classnames:
+=========================
+A.java
+Employee.java
+Customer.java
+
+Every Program must contains main() method
+
+1. public static void main(String[] args)
+2. public static void main(String []args)
+3. public static void main(String args[])
+
+
+System.out.println(inputvariable);=====>This Statement is used to display the output based on input variable.
+
+Every Java Class must be starts with Capital Letter.
+Do not define spaces between class names.
+
+Example:
+=========
+Employee.java
+CustomerDetails.java
+
+Valid:
+=======
+ArrayList.java
+EmployeeDetails.java
+Employee_Details.java
+
+InValid:
+=========
+Basic Program.java(InValid)
+
+variable name must be defined with small case letters.
+
+int x =100;
+
+int empId = 7788;
+
+JVM ===> JAVA VIRTUAL MACHINE
+
+JDK ===> JAVA DEVELOPMENT KIT===> Using this JDK Software we can develop the new Java Programs/Java Projects.
+                                  We can also run the already developed Java Program/Java Projects.
+                                  Why Because JDK Software Internally Contains JRE Software.
+                                  If Client as to download and install only JDK Software means
+                                  then he can develop new JavaProject as well as he can also run those
+                                  developed project.
+
+JRE ===> JAVA RUNTIME ENVIRONMENT==> Using this JRE Software we can run the already developed 
+         Java Programs/Java Projects.
+         But we cannot develop the new Java Programs/Java Projects.
+         Why Because using JRE Software we cannot develop new Java Programs/Java Projects we can run
+         only already existing Java Programs/Java Projects.
+
+
+=====================================================================================================================================
+                                                            Datatypes:
+                                                            ==========
+Datatypes are nothing but a some of the keywords of the programming Languages,which are used to specify what type of data is going to be stored into the variables.
+
+datatypes of one programming language is not going to be same with datatypes of 
+another programming languages.
+
+datatypes in java are classified into 2 types:
+
+a)Primitive Datatypes:
+======================
+These Datatypes Are Used To Allows Only Single Values at a time,if we assigns more than
+one values to any datatype then we will get an error called compile time error.
+
+ex:
+====
+String s="surya";(Valid)
+char c='f','h';(Invalid)
+
+Programmer or Developer Should Assigns Datatypes to the variables Explicitly.
+
+int a=1000;(valid)
+
+b="hari"(invalid)
+
+example fundamental datatypes:
+==============================
+byte(1 byte==>8 bits),short(2 bytes==>16 bits),int(4 bytes==>32 bits),long(8 bytes===>64 bits),char(2 bytes==>16 bits),String(-,- bits),boolean(0 byte,1 bit),float(4 bytes==>32 bits),double(8 bytes===>64 bits).
+
+range===>-2^n-1 to +2^n-1  -1====>n  can allows u to take bits
+
+byte datatype===>-2^7 to +2^7 -1===>-128 to +127
+
+default values for primitive datatypes:
+======================================
+byte,short,int,long==========================>default value==>0
+float,double=================================>0.0
+char==================================>blankspace
+String==============================>null
+boolean=======================>false
+
+package com.app;
+
+public class BasicPgm 
+{
+	byte b;//0
+    public static void main(String[] args)
+    {
+       BasicPgm b=new BasicPgm();
+       System.out.println(b.b);
+    }
+}
+
+b)ReferenceDatatypes:
+=====================
+These Datatypes can stores more than one values in the form of:
+a)Class
+b)Arrays
+c)Interface
+
+Variables:
+=========
+*)Variable is a name of memory location which are used to store the data temperorly until
+its execution.
+*)we can define variables in 3 ways:
+a)alphabets
+b)underscores
+c)digits
+*)but variable names must be starts with only alphabets and underscores but not with
+digits.
+
+example:
+=======
+static String a23_="hari";(valid)
+int _45d=250;(valid)
+float 23_fg=5.6f;(invalid)
+
+*)variables are mainly classified into 3 ways:
+a)static variable:
+==================
+*)A variable which is defined in side of the class and which is preceeded with static 
+keyword is known as a static variable.
+*)static variable can be accessed with in a class directly.
+*)static variable can be accessed from one class to another class by using classname.
+*)scope of the static variable is defined with in a class using static keyword.
+
+note:
+-=-=
+In a java program we can defines n number of classes.
+Every Java Program execution starts from main().
+In which class we are finally defined the main() inside of the java program from that
+class name we can save the program.
+
+Example Program 1 For static variable defined with in a class:
+=============================================================
+class PQR
+{
+   //defining the static variable with in the class
+   static int a=100;
+   static float f=5.36f;//4 bytes
+   static double d=7.36;//8 bytes 
+   static String s="surya";
+   public static void main(String[] args)
+   {
+      System.out.println(a+"\t"+f+"\t"+d+"\t"+s);
+   }
+}
+
+note:
+====
+In a java program,we can define 'n' number of class but in which finally main method is
+present from that class name we can save our java program.
+
+ex:
+===
+X,Y,Z(main())=====>Z.java
+
+Example Program 2:
+=================
+//Calling The static variables from one class to another class
+class XYZ
+{
+   //defining the static variables with in a XYZ class
+   static int a=100;
+   static float f=5.36f;//4 bytes
+   static double d=7.36;//8 bytes 
+   static String s="surya";
+}//class closed
+
+class PQR
+{
+   public static void main(String[] args)
+   {
+      System.out.println(XYZ.a+"\t"+XYZ.f+"\t"+XYZ.d+"\t"+XYZ.s);
+   }//main method closed
+}//class closed
+
+b)non-static variable/instance variable:
+========================================
+*)A variable which is defined in side of the class and which is not preceeded with static 
+keyword is known as a non-static variable.
+*)non-static variable can be accessed with in a class using current class Object Reference Variable.
+*)non-static variable can be accessed from one class to another class by using in which class the non-static or instance variable are defined with that classname we should have
+to create an object and using its object reference variable we can access the non-static or instance variables in another class main().
+*)scope of the non-static variable is defined with in a class with out using static keyword.
+
+Defining An Object===>classname referencevariable = new classname();
+
+note:
+====
+reference variable name must be any name we can give at the time of object creating time.
+the Purpose of object reference variable is to call and access the instance variables/non-static variables which are defined in side of the class. 
+
+Example Program 1(Defining the non-static variables with in the class program):
+===============================================================================
+class Employee
+{
+   //defining the non-static variables with in the class
+   int empno=7788;
+   String empname="SCOTT";
+   double empsal=35000.00;
+   public static void main(String[] args)
+   {
+      /*allocating memory space or object for non-static or instance variables for                storing the data.
+
+      classname referencevariable=new classname();(syntax for creating memory or object) 
+
+          referencevariable name must be any name.
+      */
+      Employee emp=new Employee();
+      System.out.println(emp.empno+"\t"+emp.empname+"\t"+emp.empsal);
+   }
+}
+
+Example Program 2(calling the non-static variables from one class to another class):
+====================================================================================
+class PPP
+{
+   //non-static variables
+   int empno=7788;
+   String empname="SCOTT";
+   double empsal=35000.00;
+}
+class Test
+{
+   public static void main(String[] args)
+   {
+      /*allocating memory space or object for non-static or instance variables for                storing the data.
+
+      classname referencevariable=new classname();(syntax for creating memory or object) 
+
+          referencevariable name must be any name.
+      */
+      PPP p=new PPP();
+      System.out.println(p.empno+"\t"+p.empname+"\t"+p.empsal);
+   }
+}
+
+c)local variable:
+================
+*)A variable Which is defined and Accessed with in a methods is known as a local variables.
+*)Local Variables Cannot be accessed outside of the another methods.
+*)scope of local variable is only with in a methods.
+*)default values are not applicable by local variables,values must be mandatoryly initialized by every variable other wise we will get an compiletime/syntax errors.
+
+Example Program 1:
+==================
+class Test
+{
+   public static void main(String[] args)
+   {
+       //Defining local variables 
+      static float h=8.36f;
+      static boolean b=true;
+      System.out.println(h+"\t"+b);
+   }
+}
+
+Example Program 2:
+=================
+class Test
+{
+   public static void main(String[] args)
+   {
+       //Defining local variables 
+      float h;
+      boolean b;
+      System.out.println(h+"\t"+b);
+   }
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+METHODS:
+=======
+1)Method is a syntax or structure used to represent a logic inside the method body to perform an operations.
+
+syntax to defines a method:
+===========================
+modifiers returntype/non-returntype methodname(parameters)
+{
+       ======
+       ======
+       ======
+}
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+OOPS(Object Oriented Programming System/Structure):
+===================================================
+oops means object oriented programming system/structure,any programming languages which follows rules and regulations of oops principles and
+develop any applications into there languages by 
+following special syntaxes class and object by using 
+4 oops principles :
+by following oops principles we can achieve 3
+features:
+
+  a)Security
+  b)Coderesuability
+  c)Flexibility 
+
+oops principles are mainly classified into 4 types:
+
+a)Encapsulation:
+================
+The concept of grouping or binding related datamembers
+along with related functionalities is known as an
+Encapsulation.
+Datamembers==>(datatypes+variables)==>used to define the data
+functionalities==>(methods)==>used to perform operations using the data.
+examples:
+========
+we need to bind customer details along with the 
+bank details.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+b)Inheritance:
+=============
+the concept of accessing/overriding/inheriting the properties from one 
+class to another class is known as an Inheritance.
+mainly Inheritance relations are classified into
+2 types:
+we can implement inheritance is-a relationship concept by using extends keyword.
+a)IS-A RELATION:
+===============
+IS-A RELATION is mainly classsified into 5 types:
+
+a)Single inheritance:
+=====================
+the concept of accessing the properties from 
+parent or super or base class to child or sub or derived class is known as single inheritance.
+
+Example Program for single inheritance:
+======================================
+package com.app;
+class ABCD
+{
+	void m1()
+	{
+		System.out.println("in m1 method of class ABCD");
+	}
+	void m2()
+	{
+		System.out.println("in m2 method of class ABCD");
+	}
+}//class ABCD close
+
+public class Customer extends ABCD
+{
+	public static void main(String[] args) 
+	{
+		Customer cust=new Customer();
+		cust.m1();
+		cust.m2();
+		
+		ABCD d=new ABCD();
+		d.m1();
+		d.m2();
+	}
+}
+
+
+
+b)hierarchial:
+=============
+the concept of accessing the properties from single class to multiple 
+classes is known as a hierarchial inheritance.
+
+Example Program:
+===============
+package com.app;
+class ABCD
+{
+	void m1()
+	{
+		System.out.println("in m1 method of class ABCD");
+	}
+}//class ABCD close
+
+class Customer extends ABCD
+{
+	static void sum()
+	{
+		int a=3;
+		int b=5;
+		System.out.println(a+b);
+	}
+}//customer class closed
+
+class Location extends ABCD
+{
+	static void mul()
+	{
+		int x=2;
+		int y=3;
+		System.out.println(x*y);
+	}
+	public static void main(String[] args) 
+	{
+		Customer cust=new Customer();
+		cust.m1();
+		Customer.sum();
+		
+		Location l=new Location();
+		l.m1();
+		mul();
+	}
+}
+
+c)multilevel:
+=============
+the concept of accessing the properties from multiple classes to single 
+class by using the concept of one after another is known as a multilevel inheritance.
+
+Example Program:
+-=-=-=-=-=-=-=-=
+package com.app;
+class X1
+{
+	void m1()
+	{
+		System.out.println("in m1 method of class X1");
+	}
+}//class X close
+
+class Y1 extends X1
+{
+	void sum()
+	{
+		int a=3;
+		int b=5;
+		System.out.println(a+b);
+	}
+}//Y class closed
+
+class Z extends Y1
+{
+	static void mul()
+	{
+		int x=2;
+		int y=3;
+		System.out.println(x*y);
+	}
+	public static void main(String[] args) 
+	{
+		Z z1=new Z();
+		z1.m1();
+		z1.sum();
+		mul();
+	}
+}
+
+
+d)multiple:
+===========
+the concept of accessing the properties from multiple classes to single 
+class by using the concept of at a time is known as a multiple inheritance.
+multiple inheritance is not supported in java.
+
+Example Programs:
+-=-=-=-=-=-=-=-=
+package com.app;
+class A
+{
+	 int a=300;
+	 int b=450;
+}
+class B
+{
+	 boolean b=false;
+	 String s="surya";
+}
+public class Demo extends A,B
+{
+    public static void main(String[] args)
+    {
+    	Demo d=new Demo();
+    	System.out.println(d.a);
+    	System.out.println(d.b);
+    }
+}
+
+Output:
+-=-=-=
+Exception in thread "main" java.lang.Error: Unresolved compilation problems: 
+	Syntax error on token "]", invalid (
+	Syntax error, insert "]" to complete ArrayAccess
+	Syntax error, insert ")" to complete SingleMemberAnnotation
+	Syntax error, insert "enum Identifier" to complete EnumHeader
+
+e)cyclic inheritance:
+====================
+the concept of accessing the properties from child class to parent class is known as a 
+cyclic inheritance.
+cyclic inheritance is not supported in java and python because of ambiguity problems.
+
+Example Program:
+-=-=-=-=-=-=-=-=
+package com.app;
+class A extends Demo
+{
+	 int a=300;
+	 int b=450;
+}
+class B extends A
+{
+	 boolean b=false;
+	 String s="surya";
+}
+public class Demo extends B
+{
+    public static void main(String[] args)
+    {
+    	Demo d=new Demo();
+    	System.out.println(d.a);
+    	System.out.println(d.b);
+    }
+}
+
+
+Hybrid Inheritance:
+==================
+Combination of any two inheritances is known as a
+Hybrid Inheritance.
+
+note:
+====
+we can implement inheritance is-a relation concept in java by using extends keyword.
+
+note:
+-=-=-
+Object class is a predefined class,which is
+present inside of java.lang package in api
+documentation of any versions of java and 
+Object class is considered as a Parent class
+for all predefined or userdefined classes in
+java.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+b)HAS-A RELATION:
+================
+The Concept of holding the child class inside of the parent class as a private variable is known as a HAS-A RELATION.
+
+Example Program:
+-=-=-=-=-=-=-=-=
+Student.java(Bean Class):
+-=-=-=-=-=-=-=-=-=-=-=-=-
+package com.app;
+
+public class Student 
+{
+   private int Stdrno;//set and get methods
+   private String Stdname;
+   private double Stdfee;
+   private Project proj;
+   //right click==>source==>generate getter() and setters()
+public int getStdrno() {
+	return Stdrno;
+}
+public void setStdrno(int stdrno) {
+	Stdrno = stdrno;
+}
+public String getStdname() {
+	return Stdname;
+}
+public void setStdname(String stdname) {
+	Stdname = stdname;
+}
+public double getStdfee() {
+	return Stdfee;
+}
+public void setStdfee(double stdfee) {
+	Stdfee = stdfee;
+}
+public Project getProj() {
+	return proj;
+}
+public void setProj(Project proj) {
+	this.proj = proj;
+}
+public String toString() {
+	return "Student [Stdrno=" + Stdrno + ", Stdname=" + Stdname + ", Stdfee="
+			+ Stdfee + ", proj=" + proj + "]";
+}
+   
+}
+
+Project.java(Bean Class):
+-=-=-=-=-=-=-=-=-=-=-=-=
+package com.app;
+
+public class Project 
+{
+    private int Projid;
+    private String Projname;
+    private double Projrent;
+	public int getProjid() {
+		return Projid;
+	}
+	public void setProjid(int projid) {
+		Projid = projid;
+	}
+	public String getProjname() {
+		return Projname;
+	}
+	public void setProjname(String projname) {
+		Projname = projname;
+	}
+	public double getProjrent() {
+		return Projrent;
+	}
+	public void setProjrent(double projrent) {
+		Projrent = projrent;
+	}
+	public String toString() {
+		return "Project [Projid=" + Projid + ", Projname=" + Projname
+				+ ", Projrent=" + Projrent + "]";
+	}
+    
+    
+}
+
+Client.java:
+-=-=-=-=-=-=
+package com.app;
+
+public class Client 
+{
+    public static void main(String[] args) 
+    {
+    	Project proj=new Project();
+    	proj.setProjid(11);
+    	proj.setProjname("Ecommerece");
+    	proj.setProjrent(850000.00);
+    	System.out.println(proj);
+    	
+    	Student s=new Student();
+    	s.setStdrno(1);
+    	s.setStdname("hari");
+    	s.setStdfee(70000.00);
+    	s.setProj(proj);
+    	System.out.println(s);
+	}
+}
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+c)Polymorphism:
+===============
+Poly means many,morphism means forms,the concept
+of defining multiple functionalities(methods) or 
+logics with in a same class is known as 
+Polymorphism.
+To implment polymorphism concept in java by using
+2 ways:
+
+a)Method overloading:
+====================
+the concept of defining mutiple methods with
+same name,same number of parameters or different number
+of parameters with in a same class is known as
+a Method Overloading.
+
+Example Program:
+-=-=-=-=-=-=-=-=
+package com.app;
+
+public class MethodOverloadingPgm 
+{
+    void m1(int a)
+    {
+    	System.out.println(a);
+    }
+    void m1(String s,float f)
+    {
+    	System.out.println(s+"\t"+f);
+    }
+    void m1(boolean b,int i,char c)
+    {
+    	System.out.println(b+"\t"+i+"\t"+c);
+    }
+    public static void main(String[] args) 
+    {
+	   MethodOverloadingPgm mo=new MethodOverloadingPgm();
+	   mo.m1(100);
+	   mo.m1("hari", 5.36f);
+	   mo.m1(false, 85, 'h');
+	}
+}
+
+b)Method Overriding:
+===================
+The concept of defining multiple methods with same name,one is in super class/parent/base class and another one is in sub class/child class/derived class and preferences will be given to its sub class or child class properties only this concept
+is also is known as a Method Overiding.
+
+To work with Method Overriding concept then 2 classes
+must contains inheritance is-a relation. 
+
+Example Program:
+-=-=-=-=-=-=-=-
+package com.app;
+
+class FF
+{
+	public String toString()
+	{
+		return "hari is a good boy";
+	}
+}
+public class MethodOverridingPgm extends FF
+{
+    public String toString()
+    {
+    	System.out.println(super.toString());
+    	return "surya is a good boy";
+    }
+    public static void main(String[] args) 
+    {
+    	MethodOverridingPgm mo=new MethodOverridingPgm();
+	   String s= mo.toString();
+	   System.out.println(s);
+	   
+	   String s1= mo.toString();
+	   System.out.println(s1);
+	}
+}
+
+
+d)Abstraction:
+==============
+The concept of hiding the properties of a class,from outside of the class is known as a Abstraction.
+we can hide the properties of a abstract class or an interface by using abstract
+keyword.
+To implement Abstraction principle in java by using
+2 ways:
+
+a)Interface
+b)Abstract Class
+
+a)Interface:
+============
+*)It is a syntax or structure used to define specifications and default implementations.
+*)inside of the interface we can define all the methods,but
+we cannot provide body for abstract methods and 
+any non-static methods by default behave like as a abstract 
+methods inside of the interface and we can provide
+body for default methods and static methods also
+define static and non-static variables and for 
+the interface abstract methods body must be provided
+by its implemented class.
+to implement interface concept in java by using implements keyword.
+In java 8th version onwards default methods can allows to work inside of the interface.
+syntax:
+======
+interface interfacename
+{
+   abstract void caluculator();
+   void m2();//abstract void m2();
+   defining and providing body for static and default methods.
+   defining the varaibles(static,non-static,final and so on).
+}
+
+class classname implements interfacename
+{
+    all variables and all methods logics for interface represented properties and class
+    properties.
+}//class close
+
+interface interfacename
+{
+   defines the variables and provides logics completely only 
+   static and default methods and cannot provides methods body
+   for abstract and non-static methods.
+   int a=100;
+   static void m1()
+   {
+    
+   }
+   default void m2()
+   {
+
+   }
+   void m3();//abstract void m3();
+   abstract void m4();
+}//interface close
+
+Example Program 1:
+-=-=-=-=-=-=-=-=-=
+interface I
+{
+   //abstract methods and non-static methods also an abstract methods
+   abstract void m1();
+   public boolean equals(boolean b);//abstract public boolean equals(boolean b)
+   static void sum()
+   {
+       int a=5;
+       int b=6;
+       System.out.println(a+b);
+   }
+   default void mul()
+   {
+       float f1=5.36f;
+       float f2=6.36f;
+       System.out.println(f1*f2);
+   }
+    boolean flag=false;
+    static String s="hari";
+}//interface close
+
+class Implc implements I
+{
+     public void m1()
+     {
+       System.out.println("in m1 class of Implc");
+     }
+     public boolean equals(boolean b)
+     {
+        return b;
+     }
+     public static void main(String[] args)
+     {
+          Implc i=new Implc();
+          System.out.println(i.flag);
+          System.out.println(s);
+          I.sum();
+          i.mul();
+          i.m1();
+          boolean b1=i.equals(true);
+          System.out.println(b1);
+     }
+}//class close
+
+Example Program 2:
+-=-=-=-=-=-=-=-=-=
+interface I1
+{
+   abstract void calculator();
+}//interface close
+
+interface I2 extends I1
+{
+   abstract String message();
+}
+class Implc implements I2
+{
+     public void calculator()
+     {
+        int a=50;
+        int b=2;
+        System.out.println((a+b)+"\t"+(a-b)+"\t"+(a*b)+"\t"+(a/b));
+     }
+     public String message()
+     {
+        return "raju is a good boy";
+     }
+     public static void main(String[] args)
+     {
+          Implc i=new Implc();
+          i.calculator();
+          String s1=i.message();
+          System.out.println(s1);
+     }
+}//class close
+
+Example Program 3:
+-=-=-=-=-=-=-=-=-
+interface I1
+{
+   abstract void calculator();
+}//interface close
+
+interface I2 
+{
+   abstract String message();
+}
+class Implc implements I1,I2
+{
+     public void calculator()
+     {
+        int a=50;
+        int b=2;
+        System.out.println((a+b)+"\t"+(a-b)+"\t"+(a*b)+"\t"+(a/b));
+     }
+     public String message()
+     {
+        return "raju is a good boy";
+     }
+     public static void main(String[] args)
+     {
+          Implc i=new Implc();
+          i.calculator();
+          String s1=i.message();
+          System.out.println(s1);
+     }
+}//class close
+
+b)Abstract class:
+==================
+*)A class Which is Preceeded with abstract keyword is known as a abstract class.
+*)An abstract class can allows all the methods like static,non-static and abstract methods only and in that we cannot provides body for any method which is defined with
+abstract keyword and we can provides complete body for static and non-static methods inside of abstract class and also allows static and non-static variables.
+*)for an abstract class abstract methods body can be provided by its extended class.
+*)Inside of the abstract class if we use abstract keyword at the time of defining 
+the methods then only those methods are considered as abstract methods other if we can't define abstract keyword to any methods then those methods are non-abstract methods like
+static or non-static methods then we can provides body for those methods.
+
+syntax:
+======
+abstract class classname
+{
+    abstract void m1();
+    static void m2()
+    {
+
+    }
+    void m3()
+    {
+
+    }
+}
+
+example program 1:
+=================
+package com.app;
+abstract class P
+{
+	abstract void m1();
+	static void m2()
+	{
+		int a=350;
+		System.out.println(a);
+	}
+	void m3()
+	{
+		System.out.println("hai");
+	}
+	static String s="hari";
+    boolean b=false;
+}
+public class Demo extends P
+{
+   public void m1()
+   {
+	   System.out.println("in m1 method");
+   }
+   public static void main(String[] args) 
+   {
+	  Demo d=new Demo();
+	  d.m1();
+	  P.m2();
+	  Demo.m2();
+	  d.m3();
+	  System.out.println(Demo.s);
+	  System.out.println(d.b);
+   }
+}
+
+example program 2:
+=================
+package com.app;
+interface I
+{
+	abstract void mul(int x,int y);
+}
+interface I1 extends I
+{
+	
+}
+abstract class P implements I1
+{
+	abstract void m1();
+	static void m2()
+	{
+		int a=350;
+		System.out.println(a);
+	}
+	void m3()
+	{
+		System.out.println("hai");
+	}
+	static String s="hari";
+    boolean b=false;
+}
+public class Demo extends P 
+{
+   public void m1()
+   {
+	   System.out.println("in m1 method");
+   }
+   public void mul(int x,int y) 
+   {
+      x=5;
+      y=6;
+      System.out.println(x*y);
+   }
+   public static void main(String[] args) 
+   {
+	  Demo d=new Demo();
+	  d.m1();
+	  P.m2();
+	  Demo.m2();
+	  d.m3();
+	  System.out.println(Demo.s);
+	  System.out.println(d.b);
+	  d.mul(8, 6);
+   }
+}
+
+package com.app;
+
+public class Student 
+{
+	Student(int r)
+	{
+		System.out.println(r);
+	}
+    Student(int a,boolean f)
+    {
+    	System.out.println(a+"\t"+f);
+    }
+    Student(String s,int b,float p)
+    {
+    	System.out.println(s+"\t"+b+"\t"+p);
+    }
+	public static void main(String[] args) 
+	{
+		Student s=new Student(300);
+		Student s1=new Student(100,true);
+		Student s2=new Student("Krishna",500,2.45f);
+	}
+}
+
+
+Reading the data from keyboad and print in java console:
+========================================================
+*)To Work with Concept in Java We Can Use The Concept Of Scanner Class.
+*)Scanner is a predefined class,which is present inside of java.util package.
+*)The purpose of using the scanner class is used to read the users data from keyboard
+and print in java console at run time dynamically using its predefined methods provided scanner class.
+
+constructors:
+============
+*)constructor is a special type of method,But constructor is executed automatically when
+ever we can creates an object.
+*)constructor name and class name must be same,other wise we will get compile time
+error.
+*)In a class we can defines 'n' number of constructors,but for every constructor
+execution we can creates an object.
+*)with out constructor presence we cannot creates an object.
+*)return types and non-return types are not supported by constructors.
+   ex:
+   ===
+   class A
+   {
+       main()
+       {
+          A a1=new A();//here A() is a constructor here 
+       }
+   }
+*)Constructors are mainly classified into 2 types:
+
+a)default or no-parameterized constructor.
+b)userdefined or parameterized constructor.
+
+example program
+===============
+package com.app;
+public class Demo 
+{
+   Demo()
+   {
+	   int a=500;
+	   System.out.println(a);
+   }
+   Demo(String s)
+   {
+	   System.out.println(s);
+   }
+   public static void main(String[] args) 
+   {
+	  Demo d=new Demo("hari"); 
+   }
+}
+
+Example Program 2:
+-=-=-=-=-=-=-=-=-
+package com.app;
+
+public class Demo
+{
+	//default or no-parameterized constructor
+    Demo()
+    {
+    	int a=5;
+    	int b=6;
+    	System.out.println(a*b);
+    }
+    
+    //parameterized or userdefined constructor
+    Demo(int a)
+    {
+    	System.out.println(a);
+    }
+    public static void main(String[] args) 
+    {
+    	Demo d=new Demo();
+    	Demo d1=new Demo(5000);
+	}
+}
+
+super():
+=======
+*)super() method is the first statement while defining any user defined constructors,other
+wise we will gets an error.
+*)super() method is used only inside of the constructors.
+*)super() method is used to call the super class constuctors input variables into its sub class constructors using super method by providing data for super class constructor inside of sub class constructor.
+*)To work with super() method then 2 or more classes must contains inheritance is-a relation.
+
+example program:
+===============
+package com.app;
+abstract class AD
+{
+	AD(int a)
+	{
+		System.out.println(a);
+	}
+}
+public class Demo extends AD
+{
+   Demo()
+   {
+	  super(25000);
+   }
+   public static void main(String[] args) 
+   {
+	  Demo d=new Demo();
+   }
+}
+
+package com.app;
+
+class Parent
+{
+	Parent(int a)
+	{
+		System.out.println(a);
+	}
+}
+public class Child extends Parent
+{
+    Child()
+    {
+    	super(1000);
+    }
+    public static void main(String[] args)
+    {
+    	Child c=new Child();
+    }
+}
+
+package com.app;
+
+class Parent
+{
+	Parent(int a)
+	{
+		System.out.println(a);
+	}
+}
+public class Child extends Parent
+{
+    Child()
+    {
+    	super(1000);
+    	String s="aaa";
+    	System.out.println(s);
+    }
+    public static void main(String[] args)
+    {
+    	Child c=new Child();
+    }
+}
+
+
+package com.app;
+
+class Parent
+{
+	Parent(int a)
+	{
+		System.out.println(a);
+	}
+}
+public class Child extends Parent
+{
+    Child()
+    {
+        String s="aaa";
+    	System.out.println(s);
+    	super(1000);
+    }
+    public static void main(String[] args)
+    {
+    	Child c=new Child();
+    }
+}
+
+
+this():
+======
+*)this method is used as a first statement while defining any user defined constructors.
+*)this method is used to provide data for current class from one constructor to another
+constructors.
+*)this method must be the first statement while defining constructors.
+*)this method is used only inside of the constructors.
+
+example program using super() and this():
+=========================================
+package com.app;
+class Demo1
+{
+	Demo1()
+	{
+		System.out.println("hai");
+	}
+}
+   class Demo extends Demo1
+   {
+	   Demo(int a)
+	   {
+		  super();
+		  System.out.println("in int param constructor of class Demo"+"\n"+a);
+	   }
+	   Demo(double d)
+	   {
+		  this(23500);
+		  System.out.println("in double param constructor of class Demo"+"\n"+d);
+	   }
+	   Demo()
+	   {
+		   this(855.36);
+		   System.out.println("in default constuructor of class Demo");
+	   }
+	   public static void main(String[] args) 
+	   {
+		   Demo d=new Demo();
+	   }
+}
+
+Program using this():
+-=-=-=-=-=-=-=-=-=-=
+package com.app;
+
+public class Student 
+{
+	Student(boolean b)
+	{
+		System.out.println(b);
+	}
+	Student()
+	{
+		this(false);
+		double d=88.36;
+		System.out.println(d);
+	}
+	public static void main(String[] args)
+	{
+	   	Student s=new Student();
+	   	
+	}
+}
+
+            
+
